@@ -1,0 +1,91 @@
+.galleria-container {
+  margin-top: 24px;
+  display: grid;
+  row-gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.galleria-item {
+  position: relative;
+  width: 100%;
+}
+
+/*  */
+
+.galleria-item-description {
+  position: absolute;
+  bottom: 33px;
+  left: 32px;
+}
+
+.galleria-image {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    height: 300px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 300px;
+  }
+}
+
+.picture-name {
+  max-width: 246px;
+  width: 100%;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: auto;
+}
+
+.author-name {
+  font-size: 13px;
+  opacity: 75.28%;
+  color: #ffffff;
+  margin-top: 7px;
+}
+
+.detail-btn {
+  margin-top: 10px;
+  width: 180px;
+  height: 20px;
+  background-color: #7d7d7d;
+  border: none;
+  border-radius: 2px;
+  font-family: "Libre Baskerville", serif;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.galleria-name {
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #161d2f;
+  font-weight: bold;
+}
+
+.zero-title {
+  font-size: 12px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: red;
+
+  @media screen and (min-width: 768px) {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,118 @@
+.galleria-detail-container {
+  margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 100px;
+  }
+}
+
+.title-container h3 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 29;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+.title-container p {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #7d7d7d;
+  @media screen and (min-width: 768px) {
+    margin-top: 24px;
+  }
+}
+
+.description p {
+  font-size: 14px;
+  color: #7d7d7d;
+  margin-top: 30px;
+  line-height: 28px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
+}
+
+.description button {
+  border: none;
+  margin-top: 68px;
+  color: #7d7d7d;
+  text-decoration: underline;
+  font-family: "Libre Baskerville", serif;
+  cursor: pointer;
+  &:hover {
+    color: black;
+    transition-duration: 0.2s;
+  }
+}
+
+/* footer styles */
+
+.wrapper {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #979797;
+    height: 1px;
+  }
+}
+
+.footer {
+  padding: 17px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    padding: 25px 41px;
+  }
+}
+
+.footer h3 {
+  font-size: 14px;
+  font-weight: bold;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.footer p {
+  font-size: 10px;
+  margin-top: 9px;
+  color: #7d7d7d;
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+  }
+}
+
+.icon-container {
+  display: flex;
+  column-gap: 24px;
+}
+
+.icon-container img {
+  height: 15px;
+  @media screen and (min-width: 768px) {
+    height: 23px;
+  }
+}
+
+.loading-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
